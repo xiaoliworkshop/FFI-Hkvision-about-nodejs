@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="public/stylesheets/style.css"/>
+    <script type="text/javascript" src="public/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="public/javascripts/ajax.js"></script>
+    <script type="text/javascript" src="node_modules/socket.io-client/dist/socket.io.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <button id='button1' type='submit'>提交</button>
+    <button id='button2' type='submit'>播放</button>
+    <div id='stream-container'>
+      <canvas id='videostream' width='auto' height='auto' style='border:solid;'></canvas>
+    </div>
+    <div id="div1"></div>
+  </body>
+</html>

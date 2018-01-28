@@ -1,0 +1,27 @@
+{
+  "name": "expressapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "child_process": "~1.0.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "*",
+    "epics": "0.0.8",
+    "express": "~4.15.5",
+    "ffi": "*",
+    "gyp": "*",
+    "images": "^3.0.1",
+    "jquery": "*",
+    "morgan": "~1.9.0",
+    "ref-array": "*",
+    "ref-struct": "*",
+    "serve-favicon": "*",
+    "socket.io": "*",
+    "images":"*"
+  }
+}
