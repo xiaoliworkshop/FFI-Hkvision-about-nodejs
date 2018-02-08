@@ -20,7 +20,7 @@ $(document).ready(function(){
             type:'get',
             dataType:'json',
             success:function(data){
-                alert(data);
+                //alert(data);
                 var stringdata=JSON.stringify(data);
                 alert(stringdata);
                 $('#stream-container').after("<p>"+stringdata+"</p>");
@@ -32,18 +32,21 @@ $(document).ready(function(){
         });
 });
 Connect.prototype.initSocket=function(){
-    alert(this.serverIP);
-    alert(this.serverPort);
+    //alert(this.serverIP);
+    //alert(this.serverPort);
     this.socket=io('127.0.0.1:3000');
     //this.socket.emit('click3');
     this.socket.on('connect',function(){
-        alert("socket connected to http://"+connect.serverIP+":"+connect.serverPort);
+        //alert("socket connected to http://"+connect.serverIP+":"+connect.serverPort);
     });
     this.socket.on('canvas',function(data){
         try{
             var canvas = document.getElementById('videostream');
-            var context = canvas.getContext('2d');
-			imageObj.src = "data:image/jpeg;base64,"+data;
+			var context = canvas.getContext('2d');
+			var imageObj = new Image();
+            imageObj.src = "data:image/jpeg;base64,"+data;
+            imageObj.height=288;
+            imageObj.width=352;
 			imageObj.onload = function(){
                 canvas.height = imageObj.height;
                 canvas.width = imageObj.width;
