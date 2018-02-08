@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Hkvision node-SDK 文档说明
 使用者可以在以下github网址上找到使用案例。
 使用前必须将Hkvision-SDK开发包("HCNETSDKCom文件夹","libAudioRender.so","libHCCore.so","libhcnetsdk.so","libhpr.so","libPlayCtrl.so","libSuperRender.so"),放至运行文档根目录下面。才可以进行使用。
@@ -402,3 +403,7 @@ jpegsizeptr=ref.alloc(ref.types.ulong);
         var frame=new Buffer(data).toString('base64'); //将图像数据一base64格式进行编码
         io.video1(frame);  //将数据格式通过socket发送至web网页
     })；
+=======
+#FFI-Nodejs-aboutHkvision
+使用FFi，将hkvision视频流 解析到nodejs服务器上，来出的数据为yv12格式，数据流为时实流，如何将时实放到网上是个问题。
+>>>>>>> 51d63c1e8820da5bd2929e91d4b71d770fc18865
